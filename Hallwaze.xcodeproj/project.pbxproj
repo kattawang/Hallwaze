@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAE6E9C420321A7100E4F6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9C320321A7100E4F6EE /* AppDelegate.swift */; };
+		CAE6E9C620321A7100E4F6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9C520321A7100E4F6EE /* ViewController.swift */; };
+		CAE6E9C920321A7100E4F6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE6E9C720321A7100E4F6EE /* Main.storyboard */; };
+		CAE6E9CB20321A7100E4F6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE6E9CA20321A7100E4F6EE /* Assets.xcassets */; };
+		CAE6E9CE20321A7100E4F6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE6E9CC20321A7100E4F6EE /* LaunchScreen.storyboard */; };
+		CAE6E9D920321A7400E4F6EE /* HallwazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9D820321A7400E4F6EE /* HallwazeTests.swift */; };
+		CAE6E9E420321A7500E4F6EE /* HallwazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9E320321A7500E4F6EE /* HallwazeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE6E9D520321A7200E4F6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE6E9B820321A7000E4F6EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE6E9BF20321A7000E4F6EE;
+			remoteInfo = Hallwaze;
+		};
+		CAE6E9E020321A7400E4F6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE6E9B820321A7000E4F6EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE6E9BF20321A7000E4F6EE;
+			remoteInfo = Hallwaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAE6E9C020321A7000E4F6EE /* Hallwaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hallwaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE6E9C320321A7100E4F6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAE6E9C520321A7100E4F6EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAE6E9C820321A7100E4F6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE6E9CA20321A7100E4F6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE6E9CD20321A7100E4F6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAE6E9CF20321A7100E4F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE6E9D420321A7200E4F6EE /* HallwazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HallwazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE6E9D820321A7400E4F6EE /* HallwazeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallwazeTests.swift; sourceTree = "<group>"; };
+		CAE6E9DA20321A7400E4F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE6E9DF20321A7400E4F6EE /* HallwazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HallwazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE6E9E320321A7500E4F6EE /* HallwazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallwazeUITests.swift; sourceTree = "<group>"; };
+		CAE6E9E520321A7700E4F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE6E9BD20321A7000E4F6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6E9D120321A7200E4F6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6E9DC20321A7400E4F6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE6E9B720321A7000E4F6EE = {
+			isa = PBXGroup;
+			children = (
+				CAE6E9C220321A7000E4F6EE /* Hallwaze */,
+				CAE6E9D720321A7200E4F6EE /* HallwazeTests */,
+				CAE6E9E220321A7400E4F6EE /* HallwazeUITests */,
+				CAE6E9C120321A7000E4F6EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE6E9C120321A7000E4F6EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6E9C020321A7000E4F6EE /* Hallwaze.app */,
+				CAE6E9D420321A7200E4F6EE /* HallwazeTests.xctest */,
+				CAE6E9DF20321A7400E4F6EE /* HallwazeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE6E9C220321A7000E4F6EE /* Hallwaze */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6E9C320321A7100E4F6EE /* AppDelegate.swift */,
+				CAE6E9C520321A7100E4F6EE /* ViewController.swift */,
+				CAE6E9C720321A7100E4F6EE /* Main.storyboard */,
+				CAE6E9CA20321A7100E4F6EE /* Assets.xcassets */,
+				CAE6E9CC20321A7100E4F6EE /* LaunchScreen.storyboard */,
+				CAE6E9CF20321A7100E4F6EE /* Info.plist */,
+			);
+			path = Hallwaze;
+			sourceTree = "<group>";
+		};
+		CAE6E9D720321A7200E4F6EE /* HallwazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6E9D820321A7400E4F6EE /* HallwazeTests.swift */,
+				CAE6E9DA20321A7400E4F6EE /* Info.plist */,
+			);
+			path = HallwazeTests;
+			sourceTree = "<group>";
+		};
+		CAE6E9E220321A7400E4F6EE /* HallwazeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6E9E320321A7500E4F6EE /* HallwazeUITests.swift */,
+				CAE6E9E520321A7700E4F6EE /* Info.plist */,
+			);
+			path = HallwazeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE6E9BF20321A7000E4F6EE /* Hallwaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE6E9E820321A7700E4F6EE /* Build configuration list for PBXNativeTarget "Hallwaze" */;
+			buildPhases = (
+				CAE6E9BC20321A7000E4F6EE /* Sources */,
+				CAE6E9BD20321A7000E4F6EE /* Frameworks */,
+				CAE6E9BE20321A7000E4F6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hallwaze;
+			productName = Hallwaze;
+			productReference = CAE6E9C020321A7000E4F6EE /* Hallwaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAE6E9D320321A7200E4F6EE /* HallwazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE6E9EB20321A7700E4F6EE /* Build configuration list for PBXNativeTarget "HallwazeTests" */;
+			buildPhases = (
+				CAE6E9D020321A7200E4F6EE /* Sources */,
+				CAE6E9D120321A7200E4F6EE /* Frameworks */,
+				CAE6E9D220321A7200E4F6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE6E9D620321A7200E4F6EE /* PBXTargetDependency */,
+			);
+			name = HallwazeTests;
+			productName = HallwazeTests;
+			productReference = CAE6E9D420321A7200E4F6EE /* HallwazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAE6E9DE20321A7400E4F6EE /* HallwazeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE6E9EE20321A7700E4F6EE /* Build configuration list for PBXNativeTarget "HallwazeUITests" */;
+			buildPhases = (
+				CAE6E9DB20321A7400E4F6EE /* Sources */,
+				CAE6E9DC20321A7400E4F6EE /* Frameworks */,
+				CAE6E9DD20321A7400E4F6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE6E9E120321A7400E4F6EE /* PBXTargetDependency */,
+			);
+			name = HallwazeUITests;
+			productName = HallwazeUITests;
+			productReference = CAE6E9DF20321A7400E4F6EE /* HallwazeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE6E9B820321A7000E4F6EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alimah Granieri (student LM)";
+				TargetAttributes = {
+					CAE6E9BF20321A7000E4F6EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CAE6E9D320321A7200E4F6EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CAE6E9BF20321A7000E4F6EE;
+					};
+					CAE6E9DE20321A7400E4F6EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CAE6E9BF20321A7000E4F6EE;
+					};
+				};
+			};
+			buildConfigurationList = CAE6E9BB20321A7000E4F6EE /* Build configuration list for PBXProject "Hallwaze" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE6E9B720321A7000E4F6EE;
+			productRefGroup = CAE6E9C120321A7000E4F6EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE6E9BF20321A7000E4F6EE /* Hallwaze */,
+				CAE6E9D320321A7200E4F6EE /* HallwazeTests */,
+				CAE6E9DE20321A7400E4F6EE /* HallwazeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE6E9BE20321A7000E4F6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE6E9CE20321A7100E4F6EE /* LaunchScreen.storyboard in Resources */,
+				CAE6E9CB20321A7100E4F6EE /* Assets.xcassets in Resources */,
+				CAE6E9C920321A7100E4F6EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6E9D220321A7200E4F6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6E9DD20321A7400E4F6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE6E9BC20321A7000E4F6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE6E9C620321A7100E4F6EE /* ViewController.swift in Sources */,
+				CAE6E9C420321A7100E4F6EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6E9D020321A7200E4F6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE6E9D920321A7400E4F6EE /* HallwazeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6E9DB20321A7400E4F6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE6E9E420321A7500E4F6EE /* HallwazeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE6E9D620321A7200E4F6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE6E9BF20321A7000E4F6EE /* Hallwaze */;
+			targetProxy = CAE6E9D520321A7200E4F6EE /* PBXContainerItemProxy */;
+		};
+		CAE6E9E120321A7400E4F6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE6E9BF20321A7000E4F6EE /* Hallwaze */;
+			targetProxy = CAE6E9E020321A7400E4F6EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAE6E9C720321A7100E4F6EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE6E9C820321A7100E4F6EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE6E9CC20321A7100E4F6EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE6E9CD20321A7100E4F6EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE6E9E620321A7700E4F6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE6E9E720321A7700E4F6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE6E9E920321A7700E4F6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hallwaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "New-Wave.Hallwaze";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE6E9EA20321A7700E4F6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hallwaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "New-Wave.Hallwaze";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAE6E9EC20321A7700E4F6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HallwazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "New-Wave.HallwazeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hallwaze.app/Hallwaze";
+			};
+			name = Debug;
+		};
+		CAE6E9ED20321A7700E4F6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HallwazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "New-Wave.HallwazeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hallwaze.app/Hallwaze";
+			};
+			name = Release;
+		};
+		CAE6E9EF20321A7700E4F6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HallwazeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "New-Wave.HallwazeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hallwaze;
+			};
+			name = Debug;
+		};
+		CAE6E9F020321A7700E4F6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HallwazeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "New-Wave.HallwazeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hallwaze;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE6E9BB20321A7000E4F6EE /* Build configuration list for PBXProject "Hallwaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6E9E620321A7700E4F6EE /* Debug */,
+				CAE6E9E720321A7700E4F6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE6E9E820321A7700E4F6EE /* Build configuration list for PBXNativeTarget "Hallwaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6E9E920321A7700E4F6EE /* Debug */,
+				CAE6E9EA20321A7700E4F6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE6E9EB20321A7700E4F6EE /* Build configuration list for PBXNativeTarget "HallwazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6E9EC20321A7700E4F6EE /* Debug */,
+				CAE6E9ED20321A7700E4F6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE6E9EE20321A7700E4F6EE /* Build configuration list for PBXNativeTarget "HallwazeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6E9EF20321A7700E4F6EE /* Debug */,
+				CAE6E9F020321A7700E4F6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE6E9B820321A7000E4F6EE /* Project object */;
+}
