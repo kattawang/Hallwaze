@@ -332,7 +332,7 @@
                                     <segue destination="4cK-dU-f08" kind="embed" id="Zau-GI-hky"/>
                                 </connections>
                             </containerView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DeQ-HC-yrB">
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="DeQ-HC-yrB">
                                 <rect key="frame" x="0.0" y="0.0" width="187" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -457,6 +457,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5Ez-vQ-ZNC"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVy-sg-yPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
