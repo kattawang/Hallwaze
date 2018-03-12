@@ -9,10 +9,10 @@
 import Foundation
 
 class Room{
-    var setTeacher:Dictionary<Int,String>
+    var setTeacher:[Int:String]
     
     init(setTeachers:[String]){
-        self.setTeacher = Dictionary<Int,String>()
+        self.setTeacher = [Int:String]()
         for x in 0...8{
             self.setTeacher[x] = setTeachers[x]
         
