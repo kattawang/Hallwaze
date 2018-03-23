@@ -10,12 +10,11 @@ import Foundation
 
 class Master{
     var rooms: [Int:Room]
-    
-    init(roomNumber: Int, teacher: [Room]){
-        rooms = [:]
-        for set in 0...8{
-            self.rooms[roomNumber] = teacher[set]
-        }
+
+    init() {
+        
     }
     
+
+
 }
