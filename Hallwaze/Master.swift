@@ -8,13 +8,14 @@
 
 import Foundation
 
-class Master{
-    var rooms: [Int:Room]
+//class Master{
+//    var rooms: [Int:Room]
 
-    init() {
-        
-    }
+//    init() {
+//
+//    }
     
 
 
-}
+//}
+

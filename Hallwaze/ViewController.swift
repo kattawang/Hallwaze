@@ -9,7 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var date: UILabel!
+    
+    @IBOutlet weak var letterDay: UILabel!
+    
+    var dailySchedule: DailyScedule?
+    
+    @IBAction func scheduleSelection(_ sender: UISegmentedControl) {
+        
+    }
+    
+    @IBAction func letterDayChoice(_ sender: UIStepper) {
+        if sender.value == 0{
+            letterDay.text = "A"
+        }
+        else if sender.value == 1{
+            letterDay.text = "B"
+        }
+        else if sender.value == 2{
+            letterDay.text = "C"
+        }
+        else{
+            letterDay.text = "D"
+        }
+    }
 
+    
     @IBAction func a1(_ sender: UITextField) {
     }
     
@@ -84,7 +110,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        letterDay.text = "A"
+        dailySchedule = DailyScedule(view: self.view, choice: 1)
+        date.text = String(describing: dailySchedule?.date)
     }
 
     override func didReceiveMemoryWarning() {
