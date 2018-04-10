@@ -65,6 +65,10 @@
                         <viewLayoutGuide key="safeArea" id="qr6-LD-V3b"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Daily Schedule" id="Ypo-K3-ZnD"/>
+                    <connections>
+                        <outlet property="date" destination="VSQ-bx-f6e" id="xj6-Hh-LoS"/>
+                        <outlet property="letterDay" destination="vlR-Ks-Lwp" id="PZL-nf-5JO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOm-QC-feN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
