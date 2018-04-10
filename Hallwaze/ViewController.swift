@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func a1(_ sender: UITextField) {
+        
     }
     
     @IBAction func a2(_ sender: UITextField) {
@@ -85,11 +86,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        var defaults = UserDefaults.standard
+        
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a2, forKey: "a1")
+        defaults.setValue(a3, forKey: "a1")
+        defaults.setValue(a5, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a1, forKey: "a1")
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
     }
     
 
