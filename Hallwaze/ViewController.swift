@@ -8,101 +8,90 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBAction func a1(_ sender: UITextField) {
-        
-    }
+    @IBOutlet weak var a1: UITextField!
     
-    @IBAction func a2(_ sender: UITextField) {
-    }
+    @IBOutlet weak var a2: UITextField!
     
-    @IBAction func a3(_ sender: UITextField) {
-    }
+    @IBOutlet weak var a3: UITextField!
     
-    @IBAction func a5(_ sender: UITextField) {
-    }
+    @IBOutlet weak var a5: UITextField!
     
-    @IBAction func a6(_ sender: UITextField) {
-    }
+    @IBOutlet weak var a6: UITextField!
     
-    @IBAction func a7(_ sender: UITextField) {
-    }
+    @IBOutlet weak var a7: UITextField!
     
-    @IBAction func b4(_ sender: UITextField) {
-    }
+    @IBOutlet weak var b4: UITextField!
     
-    @IBAction func b1(_ sender: UITextField) {
-    }
+    @IBOutlet weak var b1: UITextField!
     
-    @IBAction func b2(_ sender: UITextField) {
-    }
+    @IBOutlet weak var b2: UITextField!
     
-    @IBAction func b8(_ sender: UITextField) {
-    }
+    @IBOutlet weak var b8: UITextField!
     
-    @IBAction func b5(_ sender: UITextField) {
-    }
+    @IBOutlet weak var b5: UITextField!
     
-    @IBAction func b6(_ sender: UITextField) {
-    }
+    @IBOutlet weak var b6: UITextField!
     
-    @IBAction func c3(_ sender: UITextField) {
-    }
+    @IBOutlet weak var c3: UITextField!
     
-    @IBAction func c4(_ sender: UITextField) {
-    }
+    @IBOutlet weak var c4: UITextField!
     
-    @IBAction func c1(_ sender: UITextField) {
-    }
+    @IBOutlet weak var c1: UITextField!
     
-    @IBAction func c7(_ sender: UITextField) {
-    }
+    @IBOutlet weak var c7: UITextField!
     
-    @IBAction func c8(_ sender: UITextField) {
-    }
+    @IBOutlet weak var c8: UITextField!
     
-    @IBAction func c5(_ sender: UITextField) {
-    }
+    @IBOutlet weak var c5: UITextField!
     
-    @IBAction func d2(_ sender: UITextField) {
-    }
+    @IBOutlet weak var d2: UITextField!
     
-    @IBAction func d3(_ sender: UITextField) {
-    }
+    @IBOutlet weak var d3: UITextField!
     
-    @IBAction func d4(_ sender: UITextField) {
-    }
+    @IBOutlet weak var d4: UITextField!
     
-    @IBAction func d6(_ sender: UITextField) {
-    }
+    @IBOutlet weak var d6: UITextField!
     
-    @IBAction func d7(_ sender: UITextField) {
-    }
+    @IBOutlet weak var d7: UITextField!
     
-    @IBAction func d8(_ sender: UITextField) {
-    }
+    @IBOutlet weak var d8: UITextField!
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        a1.delegate = self
+        a2.delegate = self
+        a3.delegate = self
+        a5.delegate = self
+        a6.delegate = self
+        a7.delegate = self
+        b4.delegate = self
+        b1.delegate = self
+        b2.delegate = self
+        b8.delegate = self
+        b5.delegate = self
+        b6.delegate = self
+        c3.delegate = self
+        c4.delegate = self
+        c1.delegate = self
+        c7.delegate = self
+        c8.delegate = self
+        c5.delegate = self
+        d2.delegate = self
+        d3.delegate = self
+        d4.delegate = self
+        d6.delegate = self
+        d7.delegate = self
+        d8.delegate = self
         
-        var defaults = UserDefaults.standard
         
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a2, forKey: "a1")
-        defaults.setValue(a3, forKey: "a1")
-        defaults.setValue(a5, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a1, forKey: "a1")
+        
         
     }
 
@@ -117,6 +106,17 @@ class ViewController: UIViewController {
         return true
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        var defaults = UserDefaults.standard
+        
+        defaults.setValue(a1, forKey: "a1")
+        defaults.setValue(a2, forKey: "a2")
+        defaults.setValue(a3, forKey: "a3")
+        defaults.setValue(a5, forKey: "a5")
+        defaults.setValue(a6, forKey: "a6")
+        defaults.setValue(a7, forKey: "a7")
+    }
 
 }
 

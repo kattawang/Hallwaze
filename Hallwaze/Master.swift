@@ -6,15 +6,16 @@
 //  Copyright © 2018 Alimah Granieri (student LM). All rights reserved.
 //
 
-import Foundation
+//import Foundation
+//
+//class Master{
+//    var rooms: [Int:Room]
+//
+//    init() {
+//        
+//    }
+//    
+//
+//
+//}
 
-class Master{
-    var rooms: [Int:Room]
-
-    init() {
-        
-    }
-    
-
-
-}
