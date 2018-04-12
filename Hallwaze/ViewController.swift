@@ -58,8 +58,39 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var d8: UITextField!
     
+    @IBOutlet weak var letterDay: UILabel!
     
+    @IBOutlet weak var setList: UITextView!
+    @IBOutlet weak var times: UITextView!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    @IBAction func dayLengthChoice(_ sender: UISegmentedControl) {
+        switch segmentedControl.selectedSegmentIndex{
+        case 0:
+            setList.text =
+        case 1:
+            setList.text =
+        case 2:
+            setList.text =
+        default:
+            break
+        }
+    }
+    @IBAction func letterDayChoice(_ sender: UIStepper) {
+        if sender.value == 0{
+            letterDay.text = "A"
+        }
+        else if sender.value == 1{
+            letterDay.text = "B"
+        }
+        else if sender.value == 2{
+            letterDay.text = "C"
+        }
+        else{
+            letterDay.text = "D"
+        }
+    }
     
     
     override func viewDidLoad() {
