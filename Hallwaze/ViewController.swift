@@ -59,20 +59,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var d8: UITextField!
     
     @IBOutlet weak var letterDay: UILabel!
-    
-    @IBOutlet weak var setList: UITextView!
-    @IBOutlet weak var times: UITextView!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBAction func dayLengthChoice(_ sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex{
         case 0:
-            setList.text =
+            break
         case 1:
-            setList.text =
+            break
         case 2:
-            setList.text =
+            break
         default:
             break
         }
@@ -96,32 +93,36 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        a1.delegate = self
-        a2.delegate = self
-        a3.delegate = self
-        a5.delegate = self
-        a6.delegate = self
-        a7.delegate = self
-        b4.delegate = self
-        b1.delegate = self
-        b2.delegate = self
-        b8.delegate = self
-        b5.delegate = self
-        b6.delegate = self
-        c3.delegate = self
-        c4.delegate = self
-        c1.delegate = self
-        c7.delegate = self
-        c8.delegate = self
-        c5.delegate = self
-        d2.delegate = self
-        d3.delegate = self
-        d4.delegate = self
-        d6.delegate = self
-        d7.delegate = self
-        d8.delegate = self
         
+//        a1.delegate = self
+//        a2.delegate = self
+//        a3.delegate = self
+//        a5.delegate = self
+//        a6.delegate = self
+//        a7.delegate = self
+//        b4.delegate = self
+//        b1.delegate = self
+//        b2.delegate = self
+//        b8.delegate = self
+//        b5.delegate = self
+//        b6.delegate = self
+//        c3.delegate = self
+//        c4.delegate = self
+//        c1.delegate = self
+//        c7.delegate = self
+//        c8.delegate = self
+//        c5.delegate = self
+//        d2.delegate = self
+//        d3.delegate = self
+//        d4.delegate = self
+//        d6.delegate = self
+//        d7.delegate = self
+//        d8.delegate = self
         
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        
+        date.text = formatter.string(from: Date())
         
         
     }

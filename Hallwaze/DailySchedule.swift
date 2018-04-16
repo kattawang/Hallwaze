@@ -12,12 +12,9 @@ class DailyScedule{
 
     var times: [String]
     var sets: [String]
-    var date: DateFormatter
 
-    init(view: UIView){
-        date = DateFormatter()
-        date.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        date.timeZone = NSTimeZone.default
+    init(){
+       
 
         times = ["7:30 - 8:30","8:35 - 9:31","9:36 - 10:32", "10:37 - 11:40","11:45 - 12:40","12:45 - 1:40","1:45 - 2:40"]
         sets = [""]
