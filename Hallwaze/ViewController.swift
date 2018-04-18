@@ -58,41 +58,58 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var d8: UITextField!
     
+    @IBOutlet weak var times: UILabel!
+    @IBOutlet weak var setList: UILabel!
     @IBOutlet weak var letterDay: UILabel!
     @IBOutlet weak var date: UILabel!
+    var dailyschedule: DailySchedule!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBAction func dayLengthChoice(_ sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex{
         case 0:
+            dailyschedule.times(choice: 0)
             break
         case 1:
+            dailyschedule.times(choice: 1)
             break
         case 2:
+            dailyschedule.times(choice: 2)
+            dailyschedule.sets.remove(at: 3)
             break
         default:
+            dailyschedule.times(choice: 3)
             break
         }
-    }
+        times.numberOfLines = dailyschedule.times.count
+        times.text = dailyschedule.times.joined(separator: "\n")
+        }
     @IBAction func letterDayChoice(_ sender: UIStepper) {
         if sender.value == 0{
             letterDay.text = "A"
+            dailyschedule.sets(day: 0)
         }
         else if sender.value == 1{
             letterDay.text = "B"
+            dailyschedule.sets(day: 1)
         }
         else if sender.value == 2{
             letterDay.text = "C"
+            dailyschedule.sets(day: 2)
         }
         else{
             letterDay.text = "D"
+            dailyschedule.sets(day: 3)
         }
+        setList.numberOfLines = dailyschedule.sets.count
+        setList.text = dailyschedule.sets.joined(separator: "\n")
+
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        dailyschedule = DailySchedule()
         
 //        a1.delegate = self
 //        a2.delegate = self
@@ -119,11 +136,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //        d7.delegate = self
 //        d8.delegate = self
         
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        
-        date.text = formatter.string(from: Date())
-        
         
     }
 
@@ -140,7 +152,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        var defaults = UserDefaults.standard
+        let defaults = UserDefaults.standard
         
         defaults.setValue(a1, forKey: "a1")
         defaults.setValue(a2, forKey: "a2")

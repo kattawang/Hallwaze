@@ -146,6 +146,8 @@
                         <outlet property="date" destination="Eqd-6Z-dQQ" id="b2K-EZ-UI2"/>
                         <outlet property="letterDay" destination="4jx-Hs-7Kp" id="Y3X-U4-RYN"/>
                         <outlet property="segmentedControl" destination="Sg0-bs-JaU" id="0Cj-JI-aNv"/>
+                        <outlet property="setList" destination="ker-aO-aQW" id="wtc-a4-bvv"/>
+                        <outlet property="times" destination="pnt-fy-b7o" id="h5n-tf-qc5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOm-QC-feN" userLabel="First Responder" sceneMemberID="firstResponder"/>
