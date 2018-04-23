@@ -17,6 +17,7 @@
 		CAE6E9CE20321A7100E4F6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE6E9CC20321A7100E4F6EE /* LaunchScreen.storyboard */; };
 		CAE6E9D920321A7400E4F6EE /* HallwazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9D820321A7400E4F6EE /* HallwazeTests.swift */; };
 		CAE6E9E420321A7500E4F6EE /* HallwazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9E320321A7500E4F6EE /* HallwazeUITests.swift */; };
+		CAEB43E2208E530700FA9AE9 /* MyToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB43E1208E530700FA9AE9 /* MyToDo.swift */; };
 		EB0662C820448DEB0025818B /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662C720448DEB0025818B /* Room.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		CAE6E9DF20321A7400E4F6EE /* HallwazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HallwazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE6E9E320321A7500E4F6EE /* HallwazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallwazeUITests.swift; sourceTree = "<group>"; };
 		CAE6E9E520321A7700E4F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAEB43E1208E530700FA9AE9 /* MyToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyToDo.swift; sourceTree = "<group>"; };
 		EB0662C720448DEB0025818B /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				CAE6E9CA20321A7100E4F6EE /* Assets.xcassets */,
 				CAE6E9CC20321A7100E4F6EE /* LaunchScreen.storyboard */,
 				CAE6E9CF20321A7100E4F6EE /* Info.plist */,
+				CAEB43E1208E530700FA9AE9 /* MyToDo.swift */,
 				EB0662C720448DEB0025818B /* Room.swift */,
 				CA655A182047186700A0ABA1 /* Master.swift */,
 				CA655A1A20471ED600A0ABA1 /* File.rtf */,
@@ -275,6 +278,7 @@
 				CAE6E9C620321A7100E4F6EE /* ViewController.swift in Sources */,
 				CAE6E9C420321A7100E4F6EE /* AppDelegate.swift in Sources */,
 				CA246B242072AD66002E8D3D /* DailySchedule.swift in Sources */,
+				CAEB43E2208E530700FA9AE9 /* MyToDo.swift in Sources */,
 				EB0662C820448DEB0025818B /* Room.swift in Sources */,
 				CA655A192047186700A0ABA1 /* Master.swift in Sources */,
 			);
