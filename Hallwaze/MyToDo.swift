@@ -2,9 +2,9 @@
 //  MyToDo.swift
 //  MyToDo
 //
-//  Created by Bruno Philipe on 7/1/17.
-//  Copyright © 2017 Bruno Philipe. All rights reserved.
-//
+//  Created by Justin Do on 4/26/18.
+//  Copyright © 2018 JustinDo. All rights reserved.
+
 
 import Foundation
 

@@ -251,7 +251,7 @@
         <!--Schedule-->
         <scene sceneID="6g3-SH-xeU">
             <objects>
-                <viewController id="es8-ob-CoL" customClass="ViewController" customModule="Hallwaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="es8-ob-CoL" customClass="scheduleViewController" customModule="Hallwaze" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qPr-2J-pUf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,12 +261,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aR6-nN-a4W" userLabel="a1">
-                                <rect key="frame" x="25" y="162" width="67" height="30"/>
+                                <rect key="frame" x="25" y="164" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="YTJ-9G-z5R"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ukS-tX-SVl" userLabel="a2">
                                 <rect key="frame" x="25" y="193" width="67" height="30"/>
@@ -275,6 +278,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="odM-E7-6MS"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GgI-Kt-Nw9" userLabel="a3">
                                 <rect key="frame" x="25" y="231" width="67" height="30"/>
@@ -283,6 +289,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="FEt-NF-ScP"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-fi-0Dt" userLabel="a5">
                                 <rect key="frame" x="25" y="330" width="67" height="30"/>
@@ -291,6 +300,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="kBq-5D-HYT"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Vh-qB-d5Z" userLabel="a6">
                                 <rect key="frame" x="25" y="361" width="67" height="30"/>
@@ -299,6 +311,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="Syy-OB-d8T"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uel-K7-cVu" userLabel="a7">
                                 <rect key="frame" x="25" y="394" width="67" height="30"/>
@@ -307,6 +322,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="99I-rO-T6P"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsX-HZ-uGg" userLabel="b4">
                                 <rect key="frame" x="114" y="162" width="67" height="30"/>
@@ -315,6 +333,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="beB-sR-ZLF"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVd-AJ-PeM" userLabel="b1">
                                 <rect key="frame" x="114" y="193" width="67" height="30"/>
@@ -323,6 +344,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="fV6-OQ-fcj"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFx-eX-RLh" userLabel="b2">
                                 <rect key="frame" x="114" y="231" width="67" height="30"/>
@@ -331,6 +355,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="03d-vB-yf0"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J5a-bh-fup" userLabel="b8">
                                 <rect key="frame" x="114" y="330" width="67" height="30"/>
@@ -339,6 +366,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="qgj-rP-6e5"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaF-GN-o6M" userLabel="b5">
                                 <rect key="frame" x="114" y="361" width="67" height="30"/>
@@ -347,6 +377,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="DO7-oc-5SV"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3na-1Z-PrP" userLabel="b6">
                                 <rect key="frame" x="114" y="394" width="67" height="30"/>
@@ -355,6 +388,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="Wlz-6u-2gC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-hn-1ql" userLabel="c3">
                                 <rect key="frame" x="210" y="162" width="67" height="30"/>
@@ -363,6 +399,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="80n-vS-FFm"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHB-RF-kpR" userLabel="c4">
                                 <rect key="frame" x="210" y="193" width="67" height="30"/>
@@ -371,6 +410,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="dq5-3e-nUM"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2A-rS-SGd" userLabel="c1">
                                 <rect key="frame" x="210" y="223" width="67" height="30"/>
@@ -379,6 +421,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="hKg-qF-Q0L"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qxf-Qi-f8K" userLabel="c7">
                                 <rect key="frame" x="210" y="330" width="67" height="30"/>
@@ -387,6 +432,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="Y0R-o7-2nK"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSV-Qa-HZh" userLabel="c8">
                                 <rect key="frame" x="210" y="361" width="67" height="30"/>
@@ -395,6 +443,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="JcJ-Cv-cWD"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htk-KP-yXd" userLabel="c5">
                                 <rect key="frame" x="210" y="394" width="67" height="30"/>
@@ -403,6 +454,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="2wb-sR-xJ6"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="le2-W3-abW" userLabel="d2">
                                 <rect key="frame" x="300" y="162" width="67" height="30"/>
@@ -411,6 +465,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="iJ7-hT-O0i"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CcI-e5-Zex" userLabel="d3">
                                 <rect key="frame" x="300" y="193" width="67" height="30"/>
@@ -419,6 +476,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="AlR-Af-hxB"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0g1-6W-5WH" userLabel="d4">
                                 <rect key="frame" x="300" y="223" width="67" height="30"/>
@@ -427,6 +487,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="Qv6-AR-QqR"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdH-YO-v5X" userLabel="d6">
                                 <rect key="frame" x="300" y="330" width="67" height="30"/>
@@ -435,6 +498,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="bp5-Wi-hs1"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ue-xb-nyt" userLabel="d7">
                                 <rect key="frame" x="300" y="361" width="67" height="30"/>
@@ -443,6 +509,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="T2R-7d-NZ8"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ZI-rP-BVX" userLabel="d8">
                                 <rect key="frame" x="300" y="394" width="67" height="30"/>
@@ -451,37 +520,48 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es8-ob-CoL" id="UkG-Ba-L41"/>
+                                </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uN-Pv-f1e">
+                                <rect key="frame" x="135" y="557" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear Schedule"/>
+                                <connections>
+                                    <action selector="clearSchedule:" destination="es8-ob-CoL" eventType="touchUpInside" id="tLh-uU-xrN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="FLA-QY-qHw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" id="aID-Y9-8bs"/>
                     <connections>
-                        <outlet property="a1" destination="aR6-nN-a4W" id="ard-Qh-DBC"/>
-                        <outlet property="a2" destination="ukS-tX-SVl" id="OMf-Rg-Ngb"/>
-                        <outlet property="a3" destination="GgI-Kt-Nw9" id="hSH-bU-jPO"/>
-                        <outlet property="a5" destination="R8b-fi-0Dt" id="FMV-GP-JzA"/>
-                        <outlet property="a6" destination="0Vh-qB-d5Z" id="VVF-x5-Sd5"/>
-                        <outlet property="a7" destination="Uel-K7-cVu" id="VO6-AI-IfA"/>
-                        <outlet property="b1" destination="wVd-AJ-PeM" id="o5m-Qf-Yh3"/>
-                        <outlet property="b2" destination="JFx-eX-RLh" id="e3c-fT-9sA"/>
-                        <outlet property="b4" destination="WsX-HZ-uGg" id="Qlb-DY-Gem"/>
-                        <outlet property="b5" destination="YaF-GN-o6M" id="R89-Io-Gr7"/>
-                        <outlet property="b6" destination="3na-1Z-PrP" id="IFM-Vt-w3r"/>
-                        <outlet property="b8" destination="J5a-bh-fup" id="Ujy-Ar-Nlf"/>
-                        <outlet property="c1" destination="W2A-rS-SGd" id="iGS-n3-Mej"/>
-                        <outlet property="c3" destination="5nN-hn-1ql" id="whb-US-YuD"/>
-                        <outlet property="c4" destination="W2A-rS-SGd" id="mwX-NW-Ekv"/>
-                        <outlet property="c5" destination="htk-KP-yXd" id="eFc-JJ-chW"/>
-                        <outlet property="c7" destination="Qxf-Qi-f8K" id="6Qf-aO-dAl"/>
-                        <outlet property="c8" destination="uSV-Qa-HZh" id="nI2-m5-Paf"/>
-                        <outlet property="d2" destination="le2-W3-abW" id="Q7B-r0-Skq"/>
-                        <outlet property="d3" destination="CcI-e5-Zex" id="ZiH-hf-8LO"/>
-                        <outlet property="d4" destination="0g1-6W-5WH" id="vtA-Ss-DJF"/>
-                        <outlet property="d6" destination="RdH-YO-v5X" id="jLY-65-NeE"/>
-                        <outlet property="d7" destination="9Ue-xb-nyt" id="f3v-Gq-knp"/>
-                        <outlet property="d8" destination="7ZI-rP-BVX" id="kDa-Ap-9a3"/>
+                        <outlet property="a1" destination="aR6-nN-a4W" id="GSQ-tY-N1C"/>
+                        <outlet property="a2" destination="ukS-tX-SVl" id="5si-IR-ST7"/>
+                        <outlet property="a3" destination="GgI-Kt-Nw9" id="GLs-e8-f74"/>
+                        <outlet property="a5" destination="R8b-fi-0Dt" id="CjP-ty-J9S"/>
+                        <outlet property="a6" destination="0Vh-qB-d5Z" id="qtA-qL-di7"/>
+                        <outlet property="a7" destination="Uel-K7-cVu" id="mXp-qx-Fug"/>
+                        <outlet property="b1" destination="wVd-AJ-PeM" id="qDW-nz-cUM"/>
+                        <outlet property="b2" destination="JFx-eX-RLh" id="jd2-Ch-Ipi"/>
+                        <outlet property="b4" destination="WsX-HZ-uGg" id="GmH-lk-s6U"/>
+                        <outlet property="b5" destination="YaF-GN-o6M" id="U5C-4T-hKm"/>
+                        <outlet property="b6" destination="3na-1Z-PrP" id="bc8-iH-KjZ"/>
+                        <outlet property="b8" destination="J5a-bh-fup" id="niG-Gz-XuV"/>
+                        <outlet property="c1" destination="W2A-rS-SGd" id="gwg-um-i8W"/>
+                        <outlet property="c3" destination="5nN-hn-1ql" id="MKc-TK-czH"/>
+                        <outlet property="c4" destination="xHB-RF-kpR" id="6Qr-ux-hEo"/>
+                        <outlet property="c5" destination="htk-KP-yXd" id="1fV-aV-hfM"/>
+                        <outlet property="c7" destination="Qxf-Qi-f8K" id="NMP-1Q-8TB"/>
+                        <outlet property="c8" destination="uSV-Qa-HZh" id="rFX-hh-XrJ"/>
+                        <outlet property="d2" destination="le2-W3-abW" id="Sia-Lo-gsd"/>
+                        <outlet property="d3" destination="CcI-e5-Zex" id="YPa-da-Bo3"/>
+                        <outlet property="d4" destination="0g1-6W-5WH" id="XnI-Z0-24y"/>
+                        <outlet property="d6" destination="RdH-YO-v5X" id="3K2-Md-cKh"/>
+                        <outlet property="d7" destination="9Ue-xb-nyt" id="DVd-WP-8my"/>
+                        <outlet property="d8" destination="7ZI-rP-BVX" id="4Hz-la-QRa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41X-Mh-Shp" userLabel="First Responder" sceneMemberID="firstResponder"/>

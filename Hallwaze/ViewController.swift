@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate{
     private var todoItems = [ToDoItem]()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        dailyschedule = DailySchedule()
         
         self.title = "To-Do"
         
@@ -75,7 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func didTapAddItemButton(_ sender: UIBarButtonItem)
+    @objc func didTapAddItemButton(_ sender: UIBarButtonItem)
     {
         // Create an alert
         let alert = UIAlertController(
@@ -112,20 +113,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         todoItems.append(ToDoItem(title: title))
         
         // Tell the table view a new row has been created
-        tableView.insertRows(at: [IndexPath(row: newIndex, section: 0)], with: .top)
+//        tableView.insertRows(at: [IndexPath(row: newIndex, section: 0)], with: .top)
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int
+    func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return todoItems.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell_todo", for: indexPath)
         
@@ -141,7 +142,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         tableView.deselectRow(at: indexPath, animated: true)
         
@@ -154,7 +155,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
         if indexPath.row < todoItems.count
         {
@@ -163,53 +164,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    @IBOutlet weak var a1: UITextField!
     
-    @IBOutlet weak var a2: UITextField!
     
-    @IBOutlet weak var a3: UITextField!
     
-    @IBOutlet weak var a5: UITextField!
     
-    @IBOutlet weak var a6: UITextField!
-    
-    @IBOutlet weak var a7: UITextField!
-    
-    @IBOutlet weak var b4: UITextField!
-    
-    @IBOutlet weak var b1: UITextField!
-    
-    @IBOutlet weak var b2: UITextField!
-    
-    @IBOutlet weak var b8: UITextField!
-    
-    @IBOutlet weak var b5: UITextField!
-    
-    @IBOutlet weak var b6: UITextField!
-    
-    @IBOutlet weak var c3: UITextField!
-    
-    @IBOutlet weak var c4: UITextField!
-    
-    @IBOutlet weak var c1: UITextField!
-    
-    @IBOutlet weak var c7: UITextField!
-    
-    @IBOutlet weak var c8: UITextField!
-    
-    @IBOutlet weak var c5: UITextField!
-    
-    @IBOutlet weak var d2: UITextField!
-    
-    @IBOutlet weak var d3: UITextField!
-    
-    @IBOutlet weak var d4: UITextField!
-    
-    @IBOutlet weak var d6: UITextField!
-    
-    @IBOutlet weak var d7: UITextField!
-    
-    @IBOutlet weak var d8: UITextField!
     
     @IBOutlet weak var times: UILabel!
     @IBOutlet weak var setList: UILabel!
@@ -260,60 +218,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        dailyschedule = DailySchedule()
-        
-//        a1.delegate = self
-//        a2.delegate = self
-//        a3.delegate = self
-//        a5.delegate = self
-//        a6.delegate = self
-//        a7.delegate = self
-//        b4.delegate = self
-//        b1.delegate = self
-//        b2.delegate = self
-//        b8.delegate = self
-//        b5.delegate = self
-//        b6.delegate = self
-//        c3.delegate = self
-//        c4.delegate = self
-//        c1.delegate = self
-//        c7.delegate = self
-//        c8.delegate = self
-//        c5.delegate = self
-//        d2.delegate = self
-//        d3.delegate = self
-//        d4.delegate = self
-//        d6.delegate = self
-//        d7.delegate = self
-//        d8.delegate = self
-        
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // Hide the keyboard.
-        textField.resignFirstResponder()
-        return true
-    }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-        let defaults = UserDefaults.standard
-        
-        defaults.setValue(a1, forKey: "a1")
-        defaults.setValue(a2, forKey: "a2")
-        defaults.setValue(a3, forKey: "a3")
-        defaults.setValue(a5, forKey: "a5")
-        defaults.setValue(a6, forKey: "a6")
-        defaults.setValue(a7, forKey: "a7")
-    }
+    
+    
+    
+    
+    
 
 }
 
