@@ -16,7 +16,7 @@
 		CAE6E9D920321A7400E4F6EE /* HallwazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9D820321A7400E4F6EE /* HallwazeTests.swift */; };
 		CAE6E9E420321A7500E4F6EE /* HallwazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6E9E320321A7500E4F6EE /* HallwazeUITests.swift */; };
 		CAEB43E2208E530700FA9AE9 /* MyToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB43E1208E530700FA9AE9 /* MyToDo.swift */; };
-		EBA6892B2093CE2C003621F5 /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6892A2093CE2C003621F5 /* scheduleViewController.swift */; };
+		EB8827992096A24E00E785FC /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8827982096A24E00E785FC /* scheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		CAE6E9E320321A7500E4F6EE /* HallwazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallwazeUITests.swift; sourceTree = "<group>"; };
 		CAE6E9E520321A7700E4F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAEB43E1208E530700FA9AE9 /* MyToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyToDo.swift; sourceTree = "<group>"; };
-		EBA6892A2093CE2C003621F5 /* scheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = scheduleViewController.swift; path = ../../scheduleViewController.swift; sourceTree = "<group>"; };
+		EB8827982096A24E00E785FC /* scheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 			children = (
 				CAE6E9C320321A7100E4F6EE /* AppDelegate.swift */,
 				CAE6E9C520321A7100E4F6EE /* ViewController.swift */,
-				EBA6892A2093CE2C003621F5 /* scheduleViewController.swift */,
+				EB8827982096A24E00E785FC /* scheduleViewController.swift */,
 				CAE6E9C720321A7100E4F6EE /* Main.storyboard */,
 				CAE6E9CA20321A7100E4F6EE /* Assets.xcassets */,
 				CAE6E9CC20321A7100E4F6EE /* LaunchScreen.storyboard */,
@@ -269,9 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE6E9C620321A7100E4F6EE /* ViewController.swift in Sources */,
+				EB8827992096A24E00E785FC /* scheduleViewController.swift in Sources */,
 				CAE6E9C420321A7100E4F6EE /* AppDelegate.swift in Sources */,
 				CA246B242072AD66002E8D3D /* DailySchedule.swift in Sources */,
-				EBA6892B2093CE2C003621F5 /* scheduleViewController.swift in Sources */,
 				CAEB43E2208E530700FA9AE9 /* MyToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

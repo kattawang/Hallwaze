@@ -141,7 +141,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qr6-LD-V3b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Daily Schedule" id="Ypo-K3-ZnD"/>
+                    <tabBarItem key="tabBarItem" title="Daily Schedule" image="clock" id="Ypo-K3-ZnD"/>
                     <connections>
                         <outlet property="date" destination="Eqd-6Z-dQQ" id="b2K-EZ-UI2"/>
                         <outlet property="letterDay" destination="4jx-Hs-7Kp" id="Y3X-U4-RYN"/>
@@ -177,7 +177,7 @@
                             <outlet property="delegate" destination="oH8-dm-X09" id="JWC-Va-TBQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ltu-sF-hbV"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="pencil" id="ltu-sF-hbV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhU-VS-noQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,7 +207,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="rUx-et-4qc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="fNK-ad-ENJ"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" id="fNK-ad-ENJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gml-0z-4Ll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,27 +222,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="63N-ZA-tbD">
-                                <rect key="frame" x="16" y="122" width="343" height="408"/>
+                                <rect key="frame" x="16" y="122" width="343" height="233"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="4cK-dU-f08" kind="embed" id="Zau-GI-hky"/>
                                 </connections>
                             </containerView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="DeQ-HC-yrB">
-                                <rect key="frame" x="0.0" y="0.0" width="187" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncn-rY-biK">
-                                <rect key="frame" x="245" y="7" width="83" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bathroom"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="MmW-he-7m8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="jJ6-UI-azR"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="ace" id="jJ6-UI-azR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHD-2k-dMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -536,7 +526,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="FLA-QY-qHw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Schedule" id="aID-Y9-8bs"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="master schedule" id="aID-Y9-8bs"/>
                     <connections>
                         <outlet property="a1" destination="aR6-nN-a4W" id="GSQ-tY-N1C"/>
                         <outlet property="a2" destination="ukS-tX-SVl" id="5si-IR-ST7"/>
@@ -594,11 +584,11 @@
             <objects>
                 <viewController id="4cK-dU-f08" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LPI-f2-bbb">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="408"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="233"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXA-8V-btq">
-                                <rect key="frame" x="0.0" y="0.0" width="343" height="408"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first floor" translatesAutoresizingMaskIntoConstraints="NO" id="rXA-8V-btq">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -613,5 +603,11 @@
     </scenes>
     <resources>
         <image name="Schedule" width="814" height="591"/>
+        <image name="ace" width="25" height="25"/>
+        <image name="clock" width="25" height="25"/>
+        <image name="first floor" width="637" height="426"/>
+        <image name="gear" width="25" height="25"/>
+        <image name="master schedule" width="25" height="25"/>
+        <image name="pencil" width="25" height="25"/>
     </resources>
 </document>
