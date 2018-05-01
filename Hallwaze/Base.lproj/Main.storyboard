@@ -150,13 +150,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acw-Ej-LwJ">
+                                <rect key="frame" x="16" y="139" width="343" height="438"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Rh7-fT-xV5"/>
+                                    <constraint firstAttribute="height" constant="438" id="s0F-rr-u55"/>
+                                </constraints>
+                                <string key="text">Attention all students: never worry about getting lost in LM again! Hallwaze is a new app that syncs with your schedule to give you everything you need to get where you need to go. A new building with over 300 rooms can be overwhelming, but with Hallwaze, anyone can get around our school with ease.
+</string>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rKN-WF-Iw6" firstAttribute="top" secondItem="rUx-et-4qc" secondAttribute="top" constant="34" id="36h-wM-fvR"/>
+                            <constraint firstItem="rUx-et-4qc" firstAttribute="trailing" secondItem="acw-Ej-LwJ" secondAttribute="trailing" constant="16" id="6Kr-rs-ZTP"/>
                             <constraint firstItem="rUx-et-4qc" firstAttribute="trailing" secondItem="rKN-WF-Iw6" secondAttribute="trailing" constant="120" id="8Lq-J8-Gzf"/>
                             <constraint firstItem="rUx-et-4qc" firstAttribute="bottom" secondItem="rKN-WF-Iw6" secondAttribute="bottom" constant="487" id="Fw1-7J-67L"/>
                             <constraint firstItem="rKN-WF-Iw6" firstAttribute="leading" secondItem="rUx-et-4qc" secondAttribute="leading" constant="120" id="IZ5-tR-Etz"/>
+                            <constraint firstItem="acw-Ej-LwJ" firstAttribute="top" secondItem="rKN-WF-Iw6" secondAttribute="bottom" constant="8" id="LIp-rC-VjV"/>
+                            <constraint firstItem="acw-Ej-LwJ" firstAttribute="leading" secondItem="rUx-et-4qc" secondAttribute="leading" constant="16" id="vkF-iC-8hP"/>
+                            <constraint firstItem="rUx-et-4qc" firstAttribute="bottom" secondItem="acw-Ej-LwJ" secondAttribute="bottom" constant="41" id="zrc-5V-QIx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rUx-et-4qc"/>
                     </view>
@@ -164,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gml-0z-4Ll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="726"/>
+            <point key="canvasLocation" x="381.60000000000002" y="725.48725637181417"/>
         </scene>
         <!--Map-->
         <scene sceneID="7xR-oj-huW">
